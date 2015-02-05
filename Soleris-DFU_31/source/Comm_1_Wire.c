@@ -588,7 +588,7 @@ ErrorStatus Initialize_1_Wire(void)
   while (GPIO_ReadInputDataBit(Sensor_Port, SENSOR_DATA_IN) == Bit_RESET); 
 
   subcount = 200;
-  counter = 60;
+  counter = 55;
   if ((dcounter < subcount) && (dcounter > counter))
     return SUCCESS;
   else
