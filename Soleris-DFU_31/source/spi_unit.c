@@ -342,7 +342,7 @@ uint8_t UNIT_Read_Keypad(uint8_t DrwID)
 {
   uint8_t Keycount = 0, Keycode = 0, bits, Index;
 
-  for (Index=0; Index<13; Index++)	//Do 13 so at the end, nothing selected
+  for (Index=0; Index<12; Index++)	//Do 12 so at the end, one line remains active
   {
     /* Form the keypad scan bits (keep solenoid state)*/
     bits = Keypad_Bits[Index] + 
